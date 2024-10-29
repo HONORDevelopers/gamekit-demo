@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".gamekitBaseTest">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="343dp"
+        android:layout_height="70dp"
+        android:text="Gamekit Function Test"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/registerGame"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="registerGame"
+        android:textAllCaps="false"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/textView"/>
+
+    <Button
+        android:id="@+id/unregisterGame"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="unregisterGame"
+        android:textAllCaps="false"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/registerGame"/>
+
+    <Button
+        android:id="@+id/setScene"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="setScene"
+        android:textAllCaps="false"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/unregisterGame"/>
+
+    <Button
+        android:id="@+id/updateGameSetting"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="updateGameSetting"
+        android:textAllCaps="false"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/setScene" />
+
+    <Button
+        android:id="@+id/setRemindTime"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="setRemindTime"
+        android:textAllCaps="false"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/updateGameSetting"/>
+
+    <Button
+        android:id="@+id/setTPHotCtrlArea"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="setTPHotCtrlArea"
+        android:textAllCaps="false"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/setRemindTime"/>
+
+    <Button
+        android:id="@+id/clrTPHotCtrlArea"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="clrTPHotCtrlArea"
+        android:textAllCaps="false"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/setTPHotCtrlArea"/>
+
+    <Button
+        android:id="@+id/updateGameStatus"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="updateGameStatus"
+        android:textAllCaps="false"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/clrTPHotCtrlArea"/>
+    </LinearLayout>
+</ScrollView>

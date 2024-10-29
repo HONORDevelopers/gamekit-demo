@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {
+            url 'https://developer.hihonor.com/repo'
+        }
+    }
+}
+
+
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://developer.hihonor.com/repo'
+        }
+    }
+}
+
+
+rootProject.name = "GamekitDemo"
+include ':app'

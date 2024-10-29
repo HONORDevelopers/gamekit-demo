@@ -1,0 +1,6 @@
+{
+	"developer_id":"XXXXXXXX", 	// 此处为项目开发者平台注册后生成developer_id
+	"app_id":"XXXXXXXX", 		// 此处为项目开发者平台注册后生成的appid
+	"package_name":"com.honor.gamekit.demo", 	// 应用包名，根据实际业务修改
+	"version":"1.0"	// 版本号，根据实际业务修改
+}

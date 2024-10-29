@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.honor.gamekit.demo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gamekit"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/gamekit"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GamekitDemo"
+        android:appCategory="game">
+        <activity
+            android:name=".gamekitBaseTest"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.hihonor.mcs.client.appid"
+            android:value="XXXXX" />    <!-- 对应mcs-services.json中app_id的值 -->
+        <meta-data
+            android:name="com.android.app.gamemode.performance.enabled"
+            android:value="true"/>
+    </application>
+
+</manifest>

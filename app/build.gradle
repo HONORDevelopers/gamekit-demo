@@ -1,0 +1,50 @@
+plugins {
+    id 'com.android.application'
+    id 'com.hihonor.mcs.asplugin'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.honor.gamekit.demo"
+        minSdk 30
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        config {
+            storeFile file("honorGamekit.jks")  // 应用的jks文件地址(自定义)
+            storePassword "xxxxxx"              // 应用生成jks文件时的密码(自定义)
+            keyAlias "password_verification"    // 应用生成jks文件时的密钥名称(自定义)
+            keyPassword "xxxxxx"                // 应用生成jks文件时的密钥密码(自定义)
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation (name:'system-game-1.0.0.302', ext:'aar')
+    implementation (name:'system-scheduling-1.0.0.300', ext:'aar')
+}
